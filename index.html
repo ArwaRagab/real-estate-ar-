@@ -31,7 +31,7 @@
         </div>
     </nav>
     <!-- landing -->
-    <section class="hero" id="home">
+    <section class="hero landing-page" id="home">
         <div class="overlay"></div>
         <div class="hero-content">
             <h1>اسكن في منزل احلامك</h1>
@@ -46,10 +46,81 @@
             </div>
         </div>
     </section>
+    <!-- search -->
+    <section class="advanced-search">
+        <div class="search-container">
+            <h2>ابحث عن عقارك المثالي</h2>
+            <form class="search-form">
+                <div class="form-group">
+                    <label>المدينة</label>
+                    <select required>
+                        <option class="invalid" value="" disabled selected hidden>اختر المدينة</option>
+                        <option>التجمع الخامس</option>
+                        <option>الشيخ زايد</option>
+                        <option>العاصمة الإدارية</option>
+                        <option>مدينة نصر</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>نوع العقار</label>
+                    <select required>
+                        <option class="invalid" value="" disabled selected hidden>اختر النوع</option>
+                        <option>شقة</option>
+                        <option>فيلا</option>
+                        <option>مكتب</option>
+                        <option>أرض</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>السعر من</label>
+                    <input type="number" placeholder="مثال: 1000000">
+                </div>
+                <div class="form-group">
+                    <label>السعر إلى</label>
+                    <input type="number" placeholder="مثال: 5000000">
+                </div>
+                <button type="submit" class="search-btn">
+                    بحث الآن
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- choose us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="content-side">
+                <h2>لماذا تختارنا لشراء عقارك المستقبلي؟</h2>
+                <p>نحن لا نقدم مجرد جدران، بل نصنع لك أسلوب حياة. بخبرة تمتد لسنوات في السوق العقاري، نضمن لك استثماراً آمناً وراحة بال تامة من المعاينة وحتى الاستلام.</p>
+                <a href="#properties" class="cta-btn">اكتشف مشاريعنا</a>
+            </div>
+            <div class="cards-side">
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-sack-dollar"></i></div>
+                    <h3>أفضل الأسعار</h3>
+                    <p>نوفر لك أفضل العروض في السوق مع خطط سداد مرنة تناسب ميزانيتك.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>مواقع مميزة</h3>
+                    <p>عقارات في أفضل المناطق الحيوية والقريبة من كافة الخدمات الأساسية.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>دعم مستمر</h3>
+                    <p>فريقنا جاهز للرد على استفساراتك ومتابعة إجراءاتك على مدار الساعة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>أمان قانوني</h3>
+                    <p>جميع عقودنا موثقة ونضمن لك صحة كافة الأوراق القانونية والملكية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- properties -->
     <section class="featured" id="properties">
         <div>
-            <h2>خصائص الوحدات</h2>
+            <h2>احدث العقارات</h2>
             <p class="subtitle">
             إليك بعض الوحدات التي يمكن ان تكون مناسبة لذوقك.
             </p>
@@ -96,7 +167,7 @@
                     </div>
                     <div class="content">
                         <h3>فيلا بحديقة</h3>
-                    <p class="location"><i class="fa-solid fa-location-dot"></i> التجمع الخامس</p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> التجمع الخامس</p>
                         <div class="info">
                             <span><i class="fa-solid fa-bed"></i> ٥ سرير</span>
                             <span><i class="fa-solid fa-bath"></i> ٤ حمام</span>
@@ -112,8 +183,8 @@
                         <span class="price">EGP٢,٤٠٠,٠٠٠</span>
                     </div>
                     <div class="content">
-                        <h3>فيلا بحديقة</h3>
-                    <p class="location"><i class="fa-solid fa-location-dot"></i> التجمع الخامس</p>
+                        <h3>فيلا دوبليكس</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> الشيخ زايد</p>
                         <div class="info">
                             <span><i class="fa-solid fa-bed"></i> ٥ سرير</span>
                             <span><i class="fa-solid fa-bath"></i> ٤ حمام</span>
@@ -129,8 +200,8 @@
                         <span class="price">EGP٢,٤٠٠,٠٠٠</span>
                     </div>
                     <div class="content">
-                        <h3>فيلا بحديقة</h3>
-                    <p class="location"><i class="fa-solid fa-location-dot"></i> التجمع الخامس</p>
+                        <h3> شقة دوبليكس</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> العاصمة الادارية</p>
                         <div class="info">
                             <span><i class="fa-solid fa-bed"></i> ٥ سرير</span>
                             <span><i class="fa-solid fa-bath"></i> ٤ حمام</span>
@@ -147,7 +218,7 @@
                     </div>
                     <div class="content">
                         <h3>فيلا بحديقة</h3>
-                        <p class="location"><i class="fa-solid fa-location-dot"></i> التجمع الخامس</p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> مدينة نصر</p>
                         <div class="info">
                             <span><i class="fa-solid fa-bed"></i> ٥ سرير</span>
                             <span><i class="fa-solid fa-bath"></i> ٤ حمام</span>
@@ -167,20 +238,6 @@
                 <h2>من نحن مصر للعقارات</h2>
                 <p>بخبرة تزيد عن 20 عاماً في القطاع العقاري، أصبحت مصر للعقارات اسماً موثوقاً في مجال مبيعات وإدارة العقارات الفاخرة. يلتزم فريقنا من المتخصصين المتفانين بتقديم خدمة ونتائج استثنائية.</p>
                 <p>نحن ندرك أن شراء أو بيع العقارات هو أحد أهم القرارات في حياة الإنسان. لهذا السبب، نجمع بين خبرتنا في السوق المحلي وأحدث التقنيات لضمان تجربة سلسة ومريحة لعملائنا.</p>
-                <div class="stats">
-                    <div class="stat-item">
-                        <h3>٥٠٠+</h3>
-                        <p>وحدات مباعة</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>٢٥٠٠+</h3>
-                        <p>عملاء سعداء</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>٢٠+</h3>
-                        <p>سنين الخبرة</p>
-                    </div>
-                </div>
             </div>
             <div class="about-images">
                 <div class="img-wrapper main-img">
@@ -191,8 +248,18 @@
                 </div>
             </div>
         </div>
+        <div class="partners-section">
+            <h3 class="partners-title">شركاء النجاح</h3>
+            <div class="partners-logos">
+                <div class="logo-item"><img src="./images/sodic.png" alt="Sodic"></div>
+                <div class="logo-item"><img src="./images/emaar.png" alt="Emaar"></div>
+                <div class="logo-item"><img src="./images/mountain.png" alt="Mountain View"></div>
+                <div class="logo-item"><img src="./images/palm.png" alt="Palm Hills"></div>
+                <div class="logo-item"><img src="./images/tmg.png" alt="TMG"></div>
+            </div>
+        </div>
     </section>
-    <!-- services -->
+        <!-- services -->
     <section class="services-section" id="services">
         <div class="header-text">
             <h2>خدماتنا</h2>
@@ -229,6 +296,99 @@
             </div>
         </div>
     </section>
+    <!-- point of view -->
+    <!-- <section class="testimonials">
+        <h2>آراء بعض من عملائنا</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p>
+                    "خدمة ممتازة جدًا وساعدوني ألاقي شقة مناسبة بسرعة وبأفضل سعر."
+                </p>
+                <div class="client-info">
+                    <h4>أحمد محمد</h4>
+                    <span>رجل أعمال</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>
+                    "تعامل راقي ومصداقية في المواعيد وأنصح أي حد يتعامل معاهم."
+                </p>
+                <div class="client-info">
+                    <h4>سارة علي</h4>
+                    <span>مهندسة</span>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="testimonials-rich">
+        <div class="section-title">
+            <h2>تجارب نجاح حقيقية</h2>
+            <p>نعتز بثقة أكثر من 2500 عميل في سوق العقارات المصري</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="t-card">
+                <div class="t-header">
+                    <div class="user-meta">
+                        <strong>أحمد محمد</strong>
+                        <span>مستثمر عقاري</span>
+                    </div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="t-body">
+                    <p class="unit-tag">وحدة سكنية - العاصمة الإدارية</p>
+                    <p class="main-text">"كنت بدور على فرصة استثمارية مضمونة، وفريق مصر للعقارات رشحلي مشروع متميز جداً. اللي عجبني فعلاً هو التحليل المالي اللي قدموه للعائد المتوقع وصبرهم في الرد على كل استفساراتي القانونية."</p>
+                </div>
+                <div class="t-footer">
+                    <span>تاريخ التعاقد: يناير 2025</span>
+                    <span class="verified"><i class="fa-solid fa-check"></i> عميل موثق</span>
+                </div>
+            </div>
+            <div class="t-card">
+                <div class="t-header">
+                    <div class="user-meta">
+                        <strong>سارة علي</strong>
+                        <span>مهندسة ديكور</span>
+                    </div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="t-body">
+                    <p class="unit-tag">فيلا مستلمة - مدينة الشروق</p>
+                    <p class="main-text">"المصداقية هي أهم حاجة، الاستلام تم في الموعد المحدد وبالظبط نفس المواصفات اللي اتفقنا عليها. ساعدوني كمان في إجراءات التمويل العقاري وخلصوا الورق بسرعة قياسية."</p>
+                </div>
+                <div class="t-footer">
+                    <span>تاريخ التعاقد: مارس 2025</span>
+                    <span class="verified"><i class="fa-solid fa-check"></i> عميل موثق</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- statistics -->
+    <section class="stats">
+        <div class="overlay"></div>
+        <div class="stats-container">
+            <div class="stat-box">
+                <h3>+650</h3>
+                <p>وحدة مباعة</p>
+            </div>
+            <div class="stat-box">
+                <h3>+500</h3>
+                <p>عقار متاح</p>
+            </div>
+            <div class="stat-box">
+                <h3>+1300</h3>
+                <p>عميل سعيد</p>
+            </div>
+            <div class="stat-box">
+                <h3>+10</h3>
+                <p>سنوات خبرة</p>
+            </div>
+            <div class="stat-box">
+                <h3>24/7</h3>
+                <p>دعم فني</p>
+            </div>
+        </div>
+    </section>
+
     <!-- contact -->
     <section class="contact-section" id="contact">
         <div class="header-text">
@@ -300,19 +460,19 @@
             <div class="footer-column">
                 <h3>الروابط السريعة</h3>
                 <ul>
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#properties">الوحدات</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#home"> <i class="fa-solid fa-angle-left"></i> الرئيسية</a></li>
+                    <li><a href="#properties"> <i class="fa-solid fa-angle-left"></i> الوحدات</a></li>
+                    <li><a href="#about"> <i class="fa-solid fa-angle-left"></i> من نحن</a></li>
+                    <li><a href="#services"> <i class="fa-solid fa-angle-left"></i> خدماتنا</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>الخدمات</h3>
                 <ul>
-                    <li><a href="#">شراء عقار</a></li>
-                    <li><a href="#">بيع عقار</a></li>
-                    <li><a href="#">تأجير عقار</a></li>
-                    <li><a href="#">ادارة عقار</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-angle-left"></i> شراء عقار</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-angle-left"></i> بيع عقار</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-angle-left"></i> تأجير عقار</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-angle-left"></i> ادارة عقار</a></li>
                 </ul>
             </div>
             <div class="footer-column newsletter-col">
