@@ -65,26 +65,27 @@ body {
 .btn:hover {
     background: #1e4ed8;
 }
-.menu-toggle {
+.toggle-btn {
     display: none;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
 }
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
-        top: 70px;
-        left: -100%;
+        top: 100%;
+        right: 0;
         flex-direction: column;
         background: #fff;
         width: 100%;
         text-align: center;
-        padding: 20px 0;
-        transition: 0.3s;
+        transition: 0.3s ease;
+        overflow: hidden;
+        max-height: 0;
     }
     .nav-links.active {
-        left: 0;
-        display: flex;
+        max-height: 500px;
+        padding: 20px 0;
     }
     .nav-links li {
         margin: 15px 0;
@@ -92,8 +93,8 @@ body {
     .btn {
         display: none;
     }
-    .menu-toggle {
-        display: block;
+    .toggle-btn {
+    display: block;
     }
 }
 /* landing */
@@ -185,6 +186,16 @@ body {
     display: flex;
     justify-content: center;
 }
+.reveal {
+    transform: scale(0.85) translateY(80px);
+    opacity: 0;
+    transition: 0.8s ease;
+    transform-origin: center;
+}
+.reveal.active {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
 .search-container {
     background: #f8fafc;
     padding: 50px;
@@ -246,9 +257,7 @@ body {
 select:invalid {
     color: #777;
 } 
-
 /* --- الكود المكمل لكودك عشان يبقى ريسبونسيف --- */
-
 /* للشاشات المتوسطة (Tablets) - زي الآيباد */
 @media (max-width: 1024px) {
     .search-form {
@@ -256,7 +265,6 @@ select:invalid {
         grid-template-columns: repeat(2, 1fr); 
         gap: 25px;
     }
-
     .search-btn {
         /* نخلي الزرار ياخد السطر كله في النص */
         grid-column: span 2; 
@@ -565,20 +573,6 @@ select:invalid {
     margin-bottom: 20px;
     font-size: 1.1rem;
 }
-.stats {
-    display: flex;
-    gap: 30px;
-    margin-top: 40px;
-}
-.stat-item h3 {
-    color: #2e5cff; /* اللون الأزرق اللي في الصورة */
-    font-size: 2rem;
-    margin-bottom: 5px;
-}
-.stat-item p {
-    font-size: 0.9rem;
-    color: #667085;
-}
 .about-images {
     flex: 1;
     display: flex;
@@ -596,6 +590,25 @@ select:invalid {
 .secondary-img {
     width: 60%;
     margin-top: 50px; /* الترحيل اللي في الصورة */
+}
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+.delay {
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 @media (max-width: 992px) {
     .container {
@@ -661,10 +674,14 @@ select:invalid {
 /* statistics */
 .stats {
     position: relative;
-    background: url("images/three.jpg") center/cover no-repeat;
+    /* background: url("images/three.jpg") center/cover no-repeat; */
     padding: 100px 20px;
     color: white;
     text-align: center;
+    background-image: url("images/three.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .stats .overlay {
     position: absolute;
@@ -681,6 +698,7 @@ select:invalid {
 }
 .stat-box {
     min-width: 200px;
+    margin: auto;
 }
 .stat-box h3 {
     font-size: 48px;
