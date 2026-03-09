@@ -9,51 +9,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <i class="fa-solid fa-house"></i>
+    <nav class="navbar w-full bg-white sticky z-1000 top-0 shadow-lg">
+        <div class="nav-container w-9/10 max-w-7xl flex items-center justify-between">
+            <div class="logo font-bold text-lg flex items-center gap-2">
+                <i class="fa-solid fa-house text-blue-600"></i>
                 مصر للعقارات
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#properties">الخصائص</a></li>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
+            <ul class="nav-links list-none flex gap-10">
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#home" >الرئيسية</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#properties">الخصائص</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#about">من نحن</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#services">الخدمات</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#contact">تواصل معنا</a></li>
             </ul>
-            <a href="#" class="btn">ابدأ</a>
-            <div class="toggle-btn" id="menu-toggle">
+            <a href="#" class="btn min-w-24 bg-blue-600 text-white rounded-lg no-underline text-md transition hover:bg-blue-700">ابدأ</a>
+            <div class="toggle-btn hidden text-2xl cursor-pointer" id="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </nav>
     <!-- landing -->
-    <section class="hero landing-page" id="home">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>اسكن في منزل احلامك</h1>
-            <p>
+    <section class="hero landing-page relative h-screen flex items-center text-white" id="home">
+        <div class="overlay absolute w-full h-full top-0 left-0"></div>
+        <div class="hero-content z-2 text-center">
+            <h1 class="text-5xl ">اسكن في منزل احلامك</h1>
+            <p class="text-lg ">
             اكتشف اجمل المميزات مع مصر للعقارات.
             <br>
             نساعدك لتجد افضل مكان ليكون منزلك.
             </p>
-            <div class="buttons">
-                <a href="#properties" class="btn primary">انظر الخصائص</a>
-                <a href="#contact" class="btn secondary">اتصل بنا</a>
+            <div class="buttons flex gap-5 justify-center">
+                <a href="#properties" class="btn rounded-lg font-bold transition duration-300 bg-blue-600 text-white hover:bg-blue-700">انظر الخصائص</a>
+                <a href="#contact" class="btn rounded-lg font-bold transition duration-300 secondary bg-white text-mist-800">اتصل بنا</a>
             </div>
         </div>
     </section>
     <!-- search -->
-    <section class="advanced-search reveal">
-        <div class="search-container">
-            <h2>ابحث عن عقارك المثالي</h2>
-            <form class="search-form">
-                <div class="form-group">
-                    <label>المدينة</label>
-                    <select required>
+    <section class="advanced-search reveal bg-white flex justify-center">
+        <div class="search-container rounded-3xl w-full ">
+            <h2 class="text-center text-3xl text-mist-700">ابحث عن عقارك المثالي</h2>
+            <form class="search-form grid grid-cols-4 gap-7">
+                <div class="form-group flex flex-col">
+                    <label class="text-lg text-mist-500">المدينة</label>
+                    <select required class="text-md transition duration-300 rounded-lg">
                         <option class="invalid" value="" disabled selected hidden>اختر المدينة</option>
                         <option>التجمع الخامس</option>
                         <option>الشيخ زايد</option>
@@ -61,9 +62,9 @@
                         <option>مدينة نصر</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>نوع العقار</label>
-                    <select required>
+                <div class="form-group flex flex-col">
+                    <label class="text-lg text-mist-500">نوع العقار</label>
+                    <select required class="text-md transition duration-300 rounded-lg">
                         <option class="invalid" value="" disabled selected hidden>اختر النوع</option>
                         <option>شقة</option>
                         <option>فيلا</option>
@@ -71,15 +72,15 @@
                         <option>أرض</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>السعر من</label>
-                    <input type="number" placeholder="مثال: 1000000">
+                <div class="form-group flex flex-col">
+                    <label class="text-lg text-mist-500">السعر من</label>
+                    <input class="text-md transition duration-300 rounded-lg" type="number" placeholder="مثال: 1000000">
                 </div>
-                <div class="form-group">
-                    <label>السعر إلى</label>
-                    <input type="number" placeholder="مثال: 5000000">
+                <div class="form-group flex flex-col">
+                    <label class="text-lg text-mist-500">السعر إلى</label>
+                    <input class="text-md transition duration-300 rounded-lg" type="number" placeholder="مثال: 5000000">
                 </div>
-                <button type="submit" class="search-btn">
+                <button type="submit" class="search-btn rounded-lg text-white bg-blue-600 hover:bg-blue-700 cursor-pointer transition duration-300 text-lg">
                     بحث الآن
                 </button>
             </form>
@@ -87,7 +88,7 @@
     </section>
     <!-- choose us -->
     <section class="why-us">
-        <div class="container">
+        <div class="container flex items-center gap-10 flex-wrap">
             <div class="content-side">
                 <h2>لماذا تختارنا لشراء عقارك المستقبلي؟</h2>
                 <p>نحن لا نقدم مجرد جدران، بل نصنع لك أسلوب حياة. بخبرة تمتد لسنوات في السوق العقاري، نضمن لك استثماراً آمناً وراحة بال تامة من المعاينة وحتى الاستلام.</p>
