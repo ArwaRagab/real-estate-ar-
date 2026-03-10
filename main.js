@@ -5,7 +5,6 @@ let links = document.querySelectorAll(".nav-links a");
 
 toggleBtn.addEventListener("click", function () {
     navLinks.classList.toggle("active");
-
   // نغير شكل الأيقونة
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-xmark");
@@ -19,7 +18,7 @@ links.forEach(link => {
         icon.classList.remove("fa-xmark");
     });
 });
-
+// landing
 let backgroundOption = true;
 let backgroundInterval;
 let landingPage = document.querySelector('.landing-page');
@@ -33,7 +32,7 @@ function randomizeImgs(){
     }
 }
 randomizeImgs();
-
+// search section
 let section = document.querySelector(".reveal");
 let observers = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -47,7 +46,7 @@ let observers = new IntersectionObserver((entries) => {
     threshold: 0.4
 });
 observers.observe(section);
-
+// the counter
 let numbers = document.querySelectorAll(".number");
 let statsSection = document.querySelector(".stats");
 function startCount(el) {
