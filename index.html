@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Arabic Copy</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css-styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav class="navbar w-full bg-white sticky z-1000 top-0 shadow-lg">
+    <nav class="navbar w-full bg-white sticky z-50 top-0 shadow-lg">
         <div class="nav-container w-9/10 max-w-7xl flex items-center justify-between">
             <div class="logo font-bold text-lg flex items-center gap-2">
                 <i class="fa-solid fa-house text-blue-600"></i>
@@ -25,7 +25,7 @@
                 <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#services">الخدمات</a></li>
                 <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#contact">تواصل معنا</a></li>
             </ul>
-            <a href="#" class="btn min-w-24 bg-blue-600 text-white rounded-lg no-underline text-md transition hover:bg-blue-700">ابدأ</a>
+            <a href="#" class="btn min-w-24 bg-blue-600 text-white text-center rounded-lg no-underline text-md transition hover:bg-blue-700">ابدأ</a>
             <div class="toggle-btn hidden text-2xl cursor-pointer" id="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -37,9 +37,9 @@
         <div class="hero-content z-2 text-center">
             <h1 class="text-5xl ">اسكن في منزل احلامك</h1>
             <p class="text-lg ">
-            اكتشف اجمل المميزات مع مصر للعقارات.
-            <br>
-            نساعدك لتجد افضل مكان ليكون منزلك.
+                اكتشف اجمل المميزات مع مصر للعقارات.
+                <br>
+                نساعدك لتجد افضل مكان ليكون منزلك.
             </p>
             <div class="buttons flex gap-5 justify-center">
                 <a href="#properties" class="btn rounded-lg font-bold transition duration-300 bg-blue-600 text-white hover:bg-blue-700">انظر الخصائص</a>
@@ -140,7 +140,7 @@
                             <span><i class="fa-solid fa-bath"></i> ٤ حمام</span>
                             <span><i class="fa-solid fa-ruler-combined"></i> ٤,٤٠٠ متر</span>
                         </div>
-                        <a href="#" class="btn block text-center bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition duration-300 cursor-pointer">انظر التفاصيل</a>
+                        <a href="trial.html" target="_blank" class="btn block text-center bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition duration-300 cursor-pointer">انظر التفاصيل</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
@@ -208,7 +208,7 @@
                             <span><i class="fa-solid fa-bath"></i> ٤ حمام</span>
                             <span><i class="fa-solid fa-ruler-combined"></i> ٤,٤٠٠ متر</span>
                         </div>
-                        <a href="#" class="btn block text-center bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition duration-300 cursor-pointer">انظر التفاصيل</a>
+                        <a href="#" target="_blank" class="btn block text-center bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition duration-300 cursor-pointer">انظر التفاصيل</a>
                     </div>
                 </div>
                 <!-- Card 6 -->
@@ -228,7 +228,9 @@
                         <a href="#" class="btn block text-center bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition duration-300 cursor-pointer">انظر التفاصيل</a>
                     </div>
                 </div>
-                <a href="#" class="bttn w-64 font-bold text-md absolute block bg-white text-blue-600 rounded-xl transition duration-300 cursor-pointer hover:bg-bule-600 hover:text-white">انظر كل الوحدات</a>   
+            </div>
+            <div class="flex justify-center mt-8">
+                <a href="#" class="bttn w-64 font-bold text-md block text-center bg-white text-blue-600 rounded-xl transition duration-300 cursor-pointer hover:bg-blue-600 hover:text-white">انظر كل الوحدات</a>
             </div>
         </div>
     </section>
@@ -465,6 +467,6 @@
             <p>&copy; 2026 مصر للعقارات. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="./js-codes/main.js"></script>
 </body>
 </html>

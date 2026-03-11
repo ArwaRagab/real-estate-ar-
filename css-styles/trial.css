@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cairo;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f9fafb;
+    direction: rtl;
+    text-align: right;
+}
+.navbar {
+    padding: 15px 0;
+}
+.nav-container {
+    margin: auto;
+    padding: 0 20px; /* أضيفي الpadding ده */
+}
+.btn {
+    padding: 8px 18px;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .nav-links.active {
+        display: flex; 
+        max-height: 500px;
+        padding: 20px 0;
+    }
+    .nav-links li {
+        margin: 15px 0;
+    }
+    .toggle-btn {
+        display: block;
+    }
+}
+/* blog */
+/* article container */
+section{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+/* sidebar */
+.sidebar{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    height:fit-content;
+}
+section ul li a{
+    display:block;
+    padding:8px 10px;
+    border-radius:6px;
+    transition:0.3s;
+    font-weight:500;
+}
+section ul li a:hover{
+    background:#edeeff;
+    color:#2747fd;
+    padding-right:14px;
+}
+/* sidebar card */
+section .shadow{
+    box-shadow:0 10px 25px rgba(0,0,0,0.07);
+}
+/* article title */
+h1{
+    color:#1f2937;
+    letter-spacing:0.5px;
+}
+/* article headings */
+h2{
+    color:#111827;
+    border-right:4px solid #2747fd;
+    padding-right:10px;
+}
+/* paragraphs */
+p{
+    font-size:16px;
+    color:#4b5563;
+}
+/* image */
+img{
+    transition:0.4s;
+}
+img:hover{
+    transform:scale(1.02);
+}
+/* divider */
+hr{
+    border:none;
+    height:1px;
+    background:#e5e7eb;
+}
+/* spacing between sections */
+h2 + p{
+    margin-bottom:20px;
+}
+/* apartments cards */
+.apartments-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+.apartment-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+.apartment-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+.apartment-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    z-index: 100;
+}
+.card-content{
+    padding:18px;
+}
+.card-content h3{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.card-content p{
+    font-size:14px;
+    color:#555;
+    line-height:1.7;
+}
+/* responsive improvements */
+@media (max-width:768px){
+    section {
+        padding: 10px !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size:24px !important;
+    }
+    h2{
+        font-size:20px !important;
+    }
+    p{
+        font-size:15px;
+    }
+}
+@media (min-width: 768px) {
+    .sidebar {
+        position: sticky;
+        top: 100px;
+    }
+}
+/* footer */
+.main-footer {
+    background-color: #0b1120; 
+    padding: 60px 5% 20px;
+    font-family: sans-serif;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-column {
+    min-width: 200px;   
+}
+.footer-logo {
+    margin-bottom: 20px;
+}
+.brand-col p {
+    color: #94a3b8; 
+    line-height: 1.6;
+}
+/* تنسيق القوائم */
+.footer-column h3 {
+    margin-bottom: 20px;
+}
+.footer-column ul {
+    padding: 0;
+}
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+.footer-column ul li a, .footer-column ul li i {
+    color: #94a3b8;
+}
+.footer-column ul li a:hover ,.footer-column ul li a:hover i {
+    color: #ffffff;
+}
+/* تنسيق فورم الاشتراك */
+.newsletter-col p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+.subscribe-form input {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 10px 15px;
+}
+.subscribe-form button {
+    padding: 10px 20px;
+}
+/* الجزء السفلي (Copyright) */
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #1e293b;
+    color: #94a3b8;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* كل عمود في سطر */
+        text-align: center;
+    }
+    .footer-logo, .subscribe-form {
+        justify-content: center;
+    }
+    .footer-column {
+        min-width: 100%;
+    }
+}

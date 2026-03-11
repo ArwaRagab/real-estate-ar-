@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Page</title>
+    <link rel="stylesheet" href="./css-styles/trial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- navbar -->
+    <nav class="navbar w-full bg-white sticky z-50 top-0 shadow-lg">
+        <div class="nav-container w-9/10 max-w-7xl flex items-center justify-between">
+            <div class="logo font-bold text-lg flex items-center gap-2">
+                <i class="fa-solid fa-house text-blue-600"></i>
+                مصر للعقارات
+            </div>
+            <ul class="nav-links list-none flex gap-10">
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html" target="_blank">الرئيسية</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#properties">الخصائص</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#about">من نحن</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#services">الخدمات</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#contact">تواصل معنا</a></li>
+            </ul>
+            <a href="#" class="btn min-w-24 bg-blue-600 text-white text-center rounded-lg no-underline text-md transition hover:bg-blue-700">تواصل معنا</a>
+            <div class="toggle-btn hidden text-2xl cursor-pointer" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- blog -->
+    <section class="max-w-7xl mx-auto p-6">
+        <div class="grid md:grid-cols-4 gap-6">
+            <!-- sidebar -->
+            <div class="sidebar bg-white p-5 rounded-lg shadow md:sticky md:top-20 h-fit">
+                <h3 class="font-bold mb-4 text-lg text-blue-500">
+                محتويات المقال
+                </h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li><a href="#overview" class="hover:text-blue-500">نظرة عامة</a></li>
+                    <li><a href="#apartments" class="hover:text-blue-500">الشقق السكنية</a></li>
+                    <li><a href="#villas" class="hover:text-blue-500">الفلل</a></li>
+                    <li><a href="#investment" class="hover:text-blue-500">الاستثمار العقاري</a></li>
+                    <li><a href="#tips" class="hover:text-blue-500">نصائح قبل شراء عقار</a></li>
+                </ul>
+            </div>
+            <!-- article -->
+            <div class="md:col-span-3 bg-white p-8 rounded-lg shadow">
+                <h1 id="overview" class="text-3xl font-bold mb-6 text-center">
+                نظرة عامة على سوق العقارات
+                </h1>
+                <hr class="mb-8">
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <img
+                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa"
+                    class="rounded-lg w-full"
+                    />
+                    <div>
+                        <p class="text-gray-700 leading-8">
+                        إذا كنت تبحث عن شراء شقة أو فيلا أو ترغب في الاستثمار في العقارات،
+                        فإن سوق العقارات يوفر العديد من الخيارات التي تناسب مختلف الاحتياجات
+                        والميزانيات.
+                        سواء كنت تبحث عن سكن عائلي مريح أو فرصة استثمارية مربحة،
+                        فإن اختيار العقار المناسب يعتمد على عدة عوامل مثل الموقع،
+                        المساحة، الخدمات المتوفرة، والسعر.
+                        </p>
+                        <p class="text-gray-700 leading-8 mt-4">
+                        تقدم شركات العقارات الحديثة خيارات متعددة تشمل
+                        الشقق السكنية والفلل الفاخرة داخل الكمبوندات،
+                        بالإضافة إلى المشاريع الجديدة التي توفر أنظمة
+                        سداد مرنة تناسب مختلف العملاء.
+                        </p>
+                    </div>
+                </div>
+                <!-- sections -->
+                <section id="apartments">
+                    <h2 class="text-3xl font-bold mt-10 mb-4">
+                    الشقق السكنية
+                    </h2>
+                    <p class="text-gray-700 leading-8">
+                    تعتبر الشقق السكنية من أكثر أنواع العقارات طلبًا،
+                    حيث توفر خيارات متعددة من حيث المساحة والسعر،
+                    كما أنها مناسبة للعائلات الصغيرة والمتوسطة.
+                    </p>
+                    <div class="apartments-cards">
+                        <div class="apartment-card">
+                            <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+                            <div class="card-content">
+                                <h3>شقق اقتصادية</h3>
+                                <p>
+                                مناسبة للشباب والأسر الصغيرة، وتتميز بأسعار مناسبة
+                                ومساحات عملية تناسب الحياة اليومية.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="apartment-card">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+                            <div class="card-content">
+                                <h3>شقق متوسطة</h3>
+                                <p>
+                                توفر مساحة أكبر وتشطيبات أفضل، وغالبًا تكون
+                                داخل مناطق سكنية متكاملة الخدمات.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="apartment-card">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+                            <div class="card-content">
+                                <h3>شقق فاخرة</h3>
+                                <p>
+                                شقق بمساحات واسعة وتصميمات عصرية داخل
+                                كمبوندات سكنية راقية مع خدمات متكاملة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="villas">
+                    <div class="space-y-6 py-10">
+                        <h2 class="text-3xl font-extrabold text-slate-900 mb-2 inline-block relative">
+                        عالم الفلل الفاخرة
+                        </h2>
+                        <p class="text-slate-500 max-w-2xl mt-2">نأخذك في جولة بين أرقى التصميمات المعمارية التي توفر لك الخصوصية والرفاهية التي تستحقها.</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-12 group">
+                        <div class="w-full md:w-1/2 overflow-hidden rounded-3xl shadow-2xl">
+                            <img src="./images/villa1.jpg" alt="مودرن" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="w-full md:w-1/2 space-y-4">
+                            <span class="text-blue-600 font-semibold tracking-wider uppercase text-sm">تصميم عصري</span>
+                            <h3 class="text-2xl font-bold text-slate-800">الفلل المودرن (Ultra Modern)</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg">
+                                تتميز بالواجهات الزجاجية الواسعة التي تسمح بمرور الضوء الطبيعي، مع خطوط معمارية حادة وبسيطة توفر شعوراً بالاتساع والحرية.
+                            </p>
+                            <button class="text-blue-600 font-bold border-b-2 border-transparent hover:border-blue-600 transition-all">إكتشف المزيد ←</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-12 mt-10 group">
+                        <div class="w-full md:w-1/2 overflow-hidden rounded-3xl shadow-2xl">
+                            <img src="./images/villa2.jpg" alt="كلاسيك" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="w-full md:w-1/2 space-y-4">
+                            <span class="text-blue-600 font-semibold tracking-wider uppercase text-sm">لمسة فخامة</span>
+                            <h3 class="text-2xl font-bold text-slate-800">النمط الكلاسيكي الفاخر</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg">
+                                لعشاق الأصابة، نوفر تصميمات مستوحاة من العمارة الأوروبية الكلاسيكية، مع أعمدة مزخرفة ومساحات خضراء شاسعة تحيط بالفيلا من كل جانب.
+                            </p>
+                            <button class="text-blue-600 font-bold border-b-2 border-transparent hover:border-blue-600 transition-all">إكتشف المزيد ←</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="investment" class="py-16 bg-slate-50 rounded-3xl px-8 mt-12">
+                    <div class="mb-12">
+                        <div class="flex items-center gap-3 mb-4">
+                        <h2 class="text-3xl font-bold text-slate-900">الاستثمار العقاري</h2>
+                        </div>
+                        <p class="text-slate-600 text-lg leading-relaxed max-w-3xl">
+                        يعد الاستثمار العقاري من أفضل طرق الحفاظ على قيمة الأموال، حيث يمكن تحقيق أرباح من خلال إعادة بيع العقار أو تأجيره. إليك كيف تبدأ بذكاء:
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl border-b-4 border-blue-600 shadow-sm hover:shadow-md transition-all group">
+                            <div class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-3">عائد استثماري مستدام</h3>
+                            <p class="text-slate-500 leading-relaxed">
+                                الاستثمار في المناطق الواعدة يضمن لك زيادة سنوية في قيمة العقار تتخطى معدلات التضخم بمسافات.
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl border-b-4 border-emerald-500 shadow-sm hover:shadow-md transition-all group">
+                            <div class="w-14 h-14 bg-emerald-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-500 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-3">دخل شهري ثابت</h3>
+                            <p class="text-slate-500 leading-relaxed">
+                                تأجير الوحدات السكنية أو الإدارية يوفر لك تدفقاً نقدياً منتظماً يساعدك في تمويل استثماراتك القادمة.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-10 bg-blue-600 rounded-2xl p-6 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="text-3xl"><i class="fa-solid fa-lightbulb text-white"></i></div>
+                            <p class="text-lg text-white font-medium">نصيحة الخبراء: الموقع هو العامل رقم 1 في نجاح أي استثمار عقاري.</p>
+                        </div>
+                        <button class="bg-white text-blue-600 px-6 py-2 rounded-full font-bold hover:bg-slate-100 transition-colors">
+                        اطلب استشارة مجانية
+                        </button>
+                    </div>
+                </section>
+                <section id="tips" class="py-12 mt-10">
+                    <div class="flex flex-col items-start mb-12">
+                        <h2 class="text-3xl font-bold text-slate-900 flex items-center gap-2">
+                            نصائح ذهبية قبل الشراء
+                        </h2>
+                        <p class="text-slate-500 mt-4 max-w-xl">خطوات بسيطة لو ركزت فيها هتضمن إنك بتشتري عقار "لقطة" وبدون مشاكل قانونية.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="relative bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-300 transition-all group">
+                            <span class="absolute -top-4 -right-4 w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center font-bold shadow-lg group-hover:bg-blue-600 transition-colors">1</span>
+                            <h3 class="font-bold text-slate-800 mb-2 mt-2">الأوراق القانونية</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">تأكد من صحة تسلسل الملكية واستخراج شهادة بيانات حديثة للعقار.</p>
+                        </div>
+                        <div class="relative bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-300 transition-all group">
+                            <span class="absolute -top-4 -right-4 w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center font-bold shadow-lg group-hover:bg-blue-600 transition-colors">2</span>
+                            <h3 class="font-bold text-slate-800 mb-2 mt-2">المعاينة الفنية</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">افحص السباكة، الكهرباء، والأساسات مع مهندس مختص لتجنب أي تكاليف خفية.</p>
+                        </div>
+                        <div class="relative bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-300 transition-all group">
+                            <span class="absolute -top-4 -right-4 w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center font-bold shadow-lg group-hover:bg-blue-600 transition-colors">3</span>
+                            <h3 class="font-bold text-slate-800 mb-2 mt-2">دراسة الموقع</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">ابحث عن توفر الخدمات، المواصلات، ومستقبل المنطقة الاستثماري.</p>
+                        </div>
+                        <div class="relative bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-300 transition-all group">
+                            <span class="absolute -top-4 -right-4 w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center font-bold shadow-lg group-hover:bg-blue-600 transition-colors">4</span>
+                            <h3 class="font-bold text-slate-800 mb-2 mt-2">مقارنة الأسعار</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">لا تتسرع، قارن بين أكثر من مشروع في نفس المنطقة لتحصل على أفضل سعر.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="main-footer text-white">
+        <div class="footer-container flex flex-wrap justify-between gap-12">
+            <div class="footer-column flex-1 brand-col">
+                <div class="footer-logo flex items-center gap-2 text-2xl font-bold">
+                    <i class="fas fa-home text-blue-600"></i>
+                    <span>مصر للعقارات</span>
+                </div>
+                <p>شريكك الموثوق في البحث عن العقار المثالي.</p>
+            </div>
+            <div class="footer-column flex-1 ">
+                <h3 class="text-xl">الروابط السريعة</h3>
+                <ul class="list-none">
+                    <li><a class=" transition duration-300 no-underline" href="#home"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> الرئيسية</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#properties"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> الوحدات</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#about"> <i class="fa-solid fa-angle-left"></i> من نحن</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#services"> <i class="fa-solid fa-angle-left"></i> خدماتنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-column flex-1 ">
+                <h3 class="text-xl">الخدمات</h3>
+                <ul class="list-none">
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> شراء عقار</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> بيع عقار</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> تأجير عقار</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> ادارة عقار</a></li>
+                </ul>
+            </div>
+            <div class="footer-column flex-1 newsletter-col">
+                <h3 class="text-xl">آخر الاخبار</h3>
+                <p class="text-sm">اشترك ليصلك أحدث المستجدات العقارية.</p>
+                <form class="subscribe-form flex gap-0">
+                    <input class="rounded-lg text-white outline-none w-full" type="email" placeholder="بريدك الالكتروني">
+                    <button class="bg-blue-600 text-white border-none rounded-lg font-bold cursor-pointer" type="submit">ارسل</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom text-center text-sm">
+            <p>&copy; 2026 مصر للعقارات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    <script src="./js-codes/trial.js"></script>
+</body>
+</html>
