@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Page</title>
+    <link rel="stylesheet" href="./css-styles/two.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar w-full bg-white sticky z-50 top-0 shadow-lg">
+        <div class="nav-container w-9/10 max-w-7xl flex items-center justify-between">
+            <div class="logo font-bold text-lg flex items-center gap-2">
+                <i class="fa-solid fa-house text-blue-600"></i>
+                مصر للعقارات
+            </div>
+            <ul class="nav-links list-none flex gap-10">
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html" target="_blank">الرئيسية</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#properties">الخصائص</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#about">من نحن</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#services">الخدمات</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#contact">تواصل معنا</a></li>
+            </ul>
+            <a href="#" class="btn min-w-24 bg-blue-600 text-white text-center rounded-lg no-underline text-md transition hover:bg-blue-700">تواصل معنا</a>
+            <div class="toggle-btn hidden text-2xl cursor-pointer" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- landing section -->
+    <section class="relative w-full mb-16 overflow-hidden rounded-3xl">
+        <div class="relative h-[450px] w-full">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3" 
+                class="absolute inset-0 w-full h-full object-cover" alt="سوق العقارات">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/40"></div>
+        </div>
+        <div class="absolute inset-0 flex flex-col justify-center px-12 text-white">
+            <span class="bg-blue-600 text-xs font-bold uppercase tracking-widest py-1 px-3 rounded-full w-fit mb-4">
+            دليل 2026
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight max-w-2xl">
+            مستقبل العقارات في مصر: <br> <span class="text-blue-400">أين تضع أموالك اليوم؟</span>
+            </h1>
+            <p class="text-slate-200 text-lg max-w-xl leading-relaxed mb-8">
+            السوق العقاري مش مجرد جدران، ده استثمار في المستقبل. في المقال ده هنحلل مع بعض الفرص المتاحة من الشقق الذكية للفلل الساحلية.
+            </p>
+            
+            <div class="flex items-center gap-6 text-sm text-slate-300 border-t border-slate-500/30 pt-6">
+            <div class="flex items-center gap-2">
+                <span><i class="fa-solid fa-pen"></i></span>
+                <span>بقلم: خبراء مصر للعقارات</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span><i class="fa-solid fa-clock"></i></span>
+                <span>قراءة في 5 دقائق</span>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="max-w-4xl mx-auto mb-20 text-center">
+        <p class="text-xl text-slate-600 leading-loose italic">
+            "إذا كنت تبحث عن شقة الأحلام أو فرصة استثمارية لا تعوض، فأنت في المكان الصحيح. سوق العقارات حالياً بيشهد طفرة في المدن الجديدة بتصاميم بتنافس العالمية."
+        </p>
+    </div>
+    <!-- section -->
+    <section class="py-16">
+        <div class="flex items-center gap-4 mb-12">
+            <h2 class="text-3xl font-bold text-slate-900">استكشف الوحدات المتاحة</h2>
+            <div class="h-[2px] flex-grow bg-slate-100 relative">
+                <div class="absolute right-0 top-0 h-full w-24 bg-blue-600"></div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div class="group relative overflow-hidden rounded-[2rem] bg-slate-900 h-[400px]">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" 
+                    class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700" alt="شقق مودرن">
+                
+                <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-slate-900 via-transparent">
+                    <span class="bg-blue-500 text-white text-xs font-bold w-fit px-4 py-1 rounded-full mb-3">الأكثر طلباً</span>
+                    <h3 class="text-2xl font-bold text-white mb-2">شقق سمارت (Smart Apartments)</h3>
+                    <p class="text-slate-300 text-sm max-w-xs transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                        وحدات مجهزة بأحدث أنظمة التحكم عن بعد، بتوفرلك أمان ورفاهية وتوفير في الطاقة.
+                    </p>
+                </div>
+                </div>
+                <div class="grid grid-rows-2 gap-6">
+                <div class="group relative overflow-hidden rounded-3xl bg-blue-50 flex items-center p-6 border border-blue-100 hover:shadow-lg transition-all">
+                    <div class="flex-grow">
+                        <h4 class="text-xl font-bold text-blue-900">ستوديو فندقي</h4>
+                        <p class="text-blue-700/70 text-sm mt-1">مثالي للاستثمار السريع أو السكن الفردي الفاخر.</p>
+                    </div>
+                    <div class="w-24 h-24 rounded-2xl overflow-hidden shadow-inner">
+                        <img src="https://images.unsplash.com/photo-1536376074432-a7ab9e0f3934" class="w-full h-full object-cover group-hover:rotate-3 transition-transform" alt="ستوديو">
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-3xl bg-slate-50 flex items-center p-6 border border-slate-200 hover:shadow-lg transition-all">
+                    <div class="flex-grow">
+                        <h4 class="text-xl font-bold text-slate-800">دوبلكس بحديقة</h4>
+                        <p class="text-slate-500 text-sm mt-1">مساحة الفيلا بخصوصية كاملة داخل عمارة سكنية.</p>
+                    </div>
+                    <div class="w-24 h-24 rounded-2xl overflow-hidden shadow-inner">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="w-full h-full object-cover group-hover:rotate-3 transition-transform" alt="دوبلكس">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="main-footer text-white">
+        <div class="footer-container flex flex-wrap justify-between gap-12">
+            <div class="footer-column flex-1 brand-col">
+                <div class="footer-logo flex items-center gap-2 text-2xl font-bold">
+                    <i class="fas fa-home text-blue-600"></i>
+                    <span>مصر للعقارات</span>
+                </div>
+                <p>شريكك الموثوق في البحث عن العقار المثالي.</p>
+            </div>
+            <div class="footer-column flex-1 ">
+                <h3 class="text-xl">الروابط السريعة</h3>
+                <ul class="list-none">
+                    <li><a class=" transition duration-300 no-underline" href="#home"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> الرئيسية</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#properties"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> الوحدات</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#about"> <i class="fa-solid fa-angle-left"></i> من نحن</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#services"> <i class="fa-solid fa-angle-left"></i> خدماتنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-column flex-1 ">
+                <h3 class="text-xl">الخدمات</h3>
+                <ul class="list-none">
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> شراء عقار</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> بيع عقار</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> تأجير عقار</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> ادارة عقار</a></li>
+                </ul>
+            </div>
+            <div class="footer-column flex-1 newsletter-col">
+                <h3 class="text-xl">آخر الاخبار</h3>
+                <p class="text-sm">اشترك ليصلك أحدث المستجدات العقارية.</p>
+                <form class="subscribe-form flex gap-0">
+                    <input class="rounded-lg text-white outline-none w-full" type="email" placeholder="بريدك الالكتروني">
+                    <button class="bg-blue-600 text-white border-none rounded-lg font-bold cursor-pointer" type="submit">ارسل</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom text-center text-sm">
+            <p>&copy; 2026 مصر للعقارات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    <script src="./js-codes/two.js"></script>
+</body>
+</html>
