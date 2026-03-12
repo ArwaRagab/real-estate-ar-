@@ -13,20 +13,20 @@
 </head>
 <body class="bg-gray-100">
     <!-- navbar -->
-    <nav class="navbar w-full bg-white sticky z-50 top-0 shadow-lg">
+    <nav class="navbar w-full bg-white sticky z-50 top-0 shadow-lg px-3">
         <div class="nav-container w-9/10 max-w-7xl flex items-center justify-between">
             <div class="logo font-bold text-lg flex items-center gap-2">
                 <i class="fa-solid fa-house text-blue-600"></i>
                 مصر للعقارات
             </div>
             <ul class="nav-links list-none flex gap-10">
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html" target="_blank">الرئيسية</a></li>
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#properties">الخصائص</a></li>
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#about">من نحن</a></li>
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#services">الخدمات</a></li>
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#contact">تواصل معنا</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html" target="_self">الرئيسية</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#properties" target="_self">الخصائص</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#about" target="_self">من نحن</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#services" target="_self">الخدمات</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#contact" target="_self">التواصل</a></li>
             </ul>
-            <a href="#" class="btn min-w-24 bg-blue-600 text-white text-center rounded-lg no-underline text-md transition hover:bg-blue-700">تواصل معنا</a>
+            <a href="#" class="btn min-w-24 bg-blue-600 text-white text-center rounded-lg no-underline text-md transition hover:bg-blue-700">اتصل</a>
             <div class="toggle-btn hidden text-2xl cursor-pointer" id="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -41,41 +41,43 @@
                 محتويات المقال
                 </h3>
                 <ul class="space-y-3 text-gray-600">
-                    <li><a href="#overview" class="hover:text-blue-500">نظرة عامة</a></li>
-                    <li><a href="#apartments" class="hover:text-blue-500">الشقق السكنية</a></li>
-                    <li><a href="#villas" class="hover:text-blue-500">الفلل</a></li>
-                    <li><a href="#investment" class="hover:text-blue-500">الاستثمار العقاري</a></li>
-                    <li><a href="#tips" class="hover:text-blue-500">نصائح قبل شراء عقار</a></li>
+                    <li><a href="#overview" class="nav-item hover:text-blue-500">نظرة عامة</a></li>
+                    <li><a href="#apartments" class="nav-item hover:text-blue-500">الشقق السكنية</a></li>
+                    <li><a href="#villas" class="nav-item hover:text-blue-500">الفلل</a></li>
+                    <li><a href="#investment" class="nav-item hover:text-blue-500">الاستثمار العقاري</a></li>
+                    <li><a href="#tips" class="nav-item hover:text-blue-500">نصائح قبل شراء عقار</a></li>
                 </ul>
             </div>
             <!-- article -->
             <div class="md:col-span-3 bg-white p-8 rounded-lg shadow">
-                <h1 id="overview" class="text-3xl font-bold mb-6 text-center">
-                نظرة عامة على سوق العقارات
-                </h1>
-                <hr class="mb-8">
-                <div class="grid md:grid-cols-2 gap-6 items-start">
-                    <img
-                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa"
-                    class="rounded-lg w-full"
-                    />
-                    <div>
-                        <p class="text-gray-700 leading-8">
-                        إذا كنت تبحث عن شراء شقة أو فيلا أو ترغب في الاستثمار في العقارات،
-                        فإن سوق العقارات يوفر العديد من الخيارات التي تناسب مختلف الاحتياجات
-                        والميزانيات.
-                        سواء كنت تبحث عن سكن عائلي مريح أو فرصة استثمارية مربحة،
-                        فإن اختيار العقار المناسب يعتمد على عدة عوامل مثل الموقع،
-                        المساحة، الخدمات المتوفرة، والسعر.
-                        </p>
-                        <p class="text-gray-700 leading-8 mt-4">
-                        تقدم شركات العقارات الحديثة خيارات متعددة تشمل
-                        الشقق السكنية والفلل الفاخرة داخل الكمبوندات،
-                        بالإضافة إلى المشاريع الجديدة التي توفر أنظمة
-                        سداد مرنة تناسب مختلف العملاء.
-                        </p>
+                <section id="overview">
+                    <h1 class="text-3xl font-bold mb-6 text-center">
+                    نظرة عامة على سوق العقارات
+                    </h1>
+                    <hr class="mb-8">
+                    <div class="grid md:grid-cols-2 gap-6 items-start">
+                        <img
+                        src="https://images.unsplash.com/photo-1560518883-ce09059eeffa"
+                        class="rounded-lg w-full"
+                        />
+                        <div>
+                            <p class="text-gray-700 leading-8">
+                            إذا كنت تبحث عن شراء شقة أو فيلا أو ترغب في الاستثمار في العقارات،
+                            فإن سوق العقارات يوفر العديد من الخيارات التي تناسب مختلف الاحتياجات
+                            والميزانيات.
+                            سواء كنت تبحث عن سكن عائلي مريح أو فرصة استثمارية مربحة،
+                            فإن اختيار العقار المناسب يعتمد على عدة عوامل مثل الموقع،
+                            المساحة، الخدمات المتوفرة، والسعر.
+                            </p>
+                            <p class="text-gray-700 leading-8 mt-4">
+                            تقدم شركات العقارات الحديثة خيارات متعددة تشمل
+                            الشقق السكنية والفلل الفاخرة داخل الكمبوندات،
+                            بالإضافة إلى المشاريع الجديدة التي توفر أنظمة
+                            سداد مرنة تناسب مختلف العملاء.
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </section>    
                 <!-- sections -->
                 <section id="apartments">
                     <h2 class="text-3xl font-bold mt-10 mb-4">

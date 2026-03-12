@@ -17,14 +17,12 @@ body {
 }
 .nav-container {
     margin: auto;
-    padding: 0 20px; /* أضيفي الpadding ده */
 }
 .btn {
     padding: 8px 18px;
 }
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
         position: absolute;
         top: 100%;
         right: 0;
@@ -37,7 +35,6 @@ body {
         max-height: 0;
     }
     .nav-links.active {
-        display: flex; 
         max-height: 500px;
         padding: 20px 0;
     }
@@ -148,7 +145,6 @@ h2 + p{
     color:#555;
     line-height:1.7;
 }
-/* responsive improvements */
 @media (max-width:768px){
     section {
         padding: 10px !important;

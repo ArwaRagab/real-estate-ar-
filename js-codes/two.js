@@ -28,3 +28,41 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         })
     })
 })
+// statics
+let numbers = document.querySelectorAll(".number");
+let statsSection = document.querySelector(".stats");
+function startCount(el) {
+    let target = +el.dataset.target;
+    let count = 0;
+    let increment = target / 150;
+    let counter = setInterval(() => {
+        count += increment;
+        if (count >= target) {
+            if (target == 15) {
+                el.innerText = "+" + target + "%";
+            } else if (target == 600) {
+                el.innerText = target + "k" + "+";
+            } else if (target == 12) {
+                el.innerText = target + "سنة";
+            } else if (target == 9) {
+                el.innerText = target + "%";
+            }
+            clearInterval(counter);
+        } else {
+            el.innerText = Math.floor(count);
+        }
+    }, 10);
+}
+let observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            numbers.forEach(num => {
+                num.innerText = "0"; // يرجعه صفر
+                startCount(num);
+            });
+        }
+    });
+}, {
+    threshold: 0.5
+});
+observer.observe(statsSection);

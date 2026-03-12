@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs Page</title>
+    <link rel="stylesheet" href="./css-styles/blogs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="navbar w-full bg-white sticky z-50 top-0 shadow-lg">
+        <div class="nav-container w-9/10 max-w-7xl flex items-center justify-between">
+            <div class="logo font-bold text-lg flex items-center gap-2">
+                <i class="fa-solid fa-house text-blue-600"></i>
+                مصر للعقارات
+            </div>
+            <ul class="nav-links list-none flex gap-10">
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html" target="_self">الرئيسية</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#properties" target="_self">الخصائص</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#about" target="_self">من نحن</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#services" target="_self">الخدمات</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#contact" target="_self">التواصل</a></li>
+            </ul>
+            <a href="#" class="btn min-w-24 bg-blue-600 text-white text-center rounded-lg no-underline text-md transition hover:bg-blue-700">اتصل</a>
+            <div class="toggle-btn hidden text-2xl cursor-pointer" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- main article -->
+    <section class="py-12">
+        <div class="relative group h-[500px] rounded-[3rem] overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="مقال رئيسي">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent"></div>
+            <div class="absolute bottom-0 right-0 p-10 text-white max-w-2xl">
+                <span class="bg-blue-600 px-4 py-1 rounded-full text-xs font-bold mb-4 inline-block uppercase">مقال الأسبوع</span>
+                <h2 class="text-4xl font-extrabold mb-4 leading-tight">دليل الاستثمار في العاصمة الإدارية: من أين تبدأ؟</h2>
+                <p class="text-slate-200 mb-6 text-lg">كل ما تحتاج معرفته عن حي المال والأعمال وأفضل المشاريع المتاحة حالياً للعوائد السريعة.</p>
+                <button><a class="bg-white text-slate-900 px-8 py-3 rounded-full font-bold hover:bg-blue-600 hover:text-white transition-all" href="blog-one.html" target="_self">إقرأ الآن</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- rest of articles -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+        <article class="flex flex-col group">
+            <div class="relative h-64 rounded-3xl overflow-hidden mb-6">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="شقق مودرن">
+                <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-xl text-xs font-bold text-slate-900">نصائح</div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">أفضل 5 ديكورات للشقق الصغيرة لزيادة المساحة</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">أفكار ذكية لاستغلال كل متر في شقتك الجديدة بلمسات عصرية وبسيطة.</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-xs">✍️</div>
+                    <span class="text-xs font-bold text-slate-400 italic">بواسطة: مهندسة الديكور</span>
+                </div>
+            </div>
+        </article>
+        <article class="flex flex-col group">
+            <div class="relative h-64 rounded-3xl overflow-hidden mb-6">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="قانون">
+                <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-xl text-xs font-bold text-slate-900">قانون</div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">كيف تتجنب عمليات النصب في شراء العقارات؟</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">قائمة التحقق الذهبية للأوراق الرسمية اللي لازم تراجعها قبل ما تمضي أي عقد.</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-xs">⚖️</div>
+                    <span class="text-xs font-bold text-slate-400 italic">بواسطة: المستشار القانوني</span>
+                </div>
+            </div>
+        </article>
+        <article class="flex flex-col group">
+            <div class="relative h-64 rounded-3xl overflow-hidden mb-6">
+                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="تحليل">
+                <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-xl text-xs font-bold text-slate-900">سوق</div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">توقعات أسعار المتر في التجمع الخامس لعام 2027</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">تحليل شامل لزيادة الأسعار المتوقعة بناءً على حجم المشاريع الجديدة.</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-xs">📈</div>
+                    <span class="text-xs font-bold text-slate-400 italic">بواسطة: فريق الأبحاث</span>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!-- footer -->
+    <footer class="main-footer text-white">
+        <div class="footer-container flex flex-wrap justify-between gap-12">
+            <div class="footer-column flex-1 brand-col">
+                <div class="footer-logo flex items-center gap-2 text-2xl font-bold">
+                    <i class="fas fa-home text-blue-600"></i>
+                    <span>مصر للعقارات</span>
+                </div>
+                <p>شريكك الموثوق في البحث عن العقار المثالي.</p>
+            </div>
+            <div class="footer-column flex-1 ">
+                <h3 class="text-xl">الروابط السريعة</h3>
+                <ul class="list-none">
+                    <li><a class=" transition duration-300 no-underline" href="#home"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> الرئيسية</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#properties"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> الوحدات</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#about"> <i class="fa-solid fa-angle-left"></i> من نحن</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#services"> <i class="fa-solid fa-angle-left"></i> خدماتنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-column flex-1 ">
+                <h3 class="text-xl">الخدمات</h3>
+                <ul class="list-none">
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> شراء عقار</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> بيع عقار</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> تأجير عقار</a></li>
+                    <li><a class=" transition duration-300 no-underline" href="#"> <i class="fa-solid fa-angle-left transition duration-300 no-underline"></i> ادارة عقار</a></li>
+                </ul>
+            </div>
+            <div class="footer-column flex-1 newsletter-col">
+                <h3 class="text-xl">آخر الاخبار</h3>
+                <p class="text-sm">اشترك ليصلك أحدث المستجدات العقارية.</p>
+                <form class="subscribe-form flex gap-0">
+                    <input class="rounded-lg text-white outline-none w-full" type="email" placeholder="بريدك الالكتروني">
+                    <button class="bg-blue-600 text-white border-none rounded-lg font-bold cursor-pointer" type="submit">ارسل</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom text-center text-sm">
+            <p>&copy; 2026 مصر للعقارات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    <script src="./js-codes/blogs.js"></script>
+</body>
+</html>

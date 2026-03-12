@@ -13,20 +13,20 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar w-full bg-white sticky z-50 top-0 shadow-lg">
+    <nav class="navbar w-full bg-white sticky z-50 top-0 shadow-lg px-3">
         <div class="nav-container w-9/10 max-w-7xl flex items-center justify-between">
             <div class="logo font-bold text-lg flex items-center gap-2">
                 <i class="fa-solid fa-house text-blue-600"></i>
                 مصر للعقارات
             </div>
             <ul class="nav-links list-none flex gap-10">
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html" target="_blank">الرئيسية</a></li>
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#properties">الخصائص</a></li>
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#about">من نحن</a></li>
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#services">الخدمات</a></li>
-                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="#contact">تواصل معنا</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html" target="_self">الرئيسية</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#properties" target="_self">الخصائص</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#about" target="_self">من نحن</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#services" target="_self">الخدمات</a></li>
+                <li><a class="text-md transition duration-300 text-mist-800 hover:text-blue-600" href="index.html#contact" target="_self">التواصل</a></li>
             </ul>
-            <a href="#" class="btn min-w-24 bg-blue-600 text-white text-center rounded-lg no-underline text-md transition hover:bg-blue-700">تواصل معنا</a>
+            <a href="#" class="btn min-w-24 bg-blue-600 text-white text-center rounded-lg no-underline text-md transition hover:bg-blue-700">اتصل</a>
             <div class="toggle-btn hidden text-2xl cursor-pointer" id="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -44,8 +44,9 @@
             دليل 2026
             </span>
             <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight max-w-2xl">
-            مستقبل العقارات في مصر: <br> <span class="text-blue-400">أين تضع أموالك اليوم؟</span>
+            مستقبل العقارات في مصر:
             </h1>
+            <h1 class="text-blue-400 text-4xl md:text-5xl font-extrabold mb-6 leading-tight max-w-2xl">أين تضع أموالك اليوم؟</h1>
             <p class="text-slate-200 text-lg max-w-xl leading-relaxed mb-8">
             السوق العقاري مش مجرد جدران، ده استثمار في المستقبل. في المقال ده هنحلل مع بعض الفرص المتاحة من الشقق الذكية للفلل الساحلية.
             </p>
@@ -62,24 +63,40 @@
             </div>
         </div>
     </section>
-    <div class="max-w-4xl mx-auto mb-20 text-center">
-        <p class="text-xl text-slate-600 leading-loose italic">
-            "إذا كنت تبحث عن شقة الأحلام أو فرصة استثمارية لا تعوض، فأنت في المكان الصحيح. سوق العقارات حالياً بيشهد طفرة في المدن الجديدة بتصاميم بتنافس العالمية."
-        </p>
-    </div>
-    <!-- section -->
+    <!-- quote section -->
+    <section class="my-20 px-6">
+        <div class="max-w-5xl mx-auto relative group">
+            <div class="absolute -top-10 -right-4 text-slate-200 text-9xl font-serif select-none group-hover:text-blue-50 transition-colors">
+                &rdquo;
+            </div>
+            <div class="relative bg-gradient-to-br from-white to-slate-50 p-10 md:p-16 rounded-[3rem] shadow-sm border border-slate-100 text-center">
+                <div class="flex justify-center mb-8">
+                    <div class="w-12 h-1 bg-blue-600 rounded-full"></div>
+                </div>
+                <p class="text-2xl md:text-3xl font-medium text-slate-800 leading-relaxed italic">
+                    "إذا كنت تبحث عن <span class="text-blue-600 font-bold">شقة الأحلام</span> أو فرصة استثمارية لا تعوض، فأنت في المكان الصحيح. سوق العقارات حالياً بيشهد طفرة في المدن الجديدة بتصاميم بتنافس العالمية"
+                </p>
+                <div class="mt-8 flex items-center justify-center gap-4">
+                    <div class="h-[1px] w-10 bg-slate-300"></div>
+                    <span class="text-slate-400 font-semibold tracking-widest uppercase text-sm">مصر للعقارات</span>
+                    <div class="h-[1px] w-10 bg-slate-300"></div>
+                </div>
+            </div>
+            <div class="absolute -bottom-16 -left-4 text-slate-200 text-9xl font-serif select-none rotate-180">
+                &rdquo;
+            </div>
+        </div>
+    </section>
+    <!-- ex section -->
     <section class="py-16">
         <div class="flex items-center gap-4 mb-12">
             <h2 class="text-3xl font-bold text-slate-900">استكشف الوحدات المتاحة</h2>
-            <div class="h-[2px] flex-grow bg-slate-100 relative">
-                <div class="absolute right-0 top-0 h-full w-24 bg-blue-600"></div>
-            </div>
+            <div class="h-[2px] flex-grow bg-slate-100 relative"></div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div class="group relative overflow-hidden rounded-[2rem] bg-slate-900 h-[400px]">
                 <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" 
                     class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700" alt="شقق مودرن">
-                
                 <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-slate-900 via-transparent">
                     <span class="bg-blue-500 text-white text-xs font-bold w-fit px-4 py-1 rounded-full mb-3">الأكثر طلباً</span>
                     <h3 class="text-2xl font-bold text-white mb-2">شقق سمارت (Smart Apartments)</h3>
@@ -95,7 +112,7 @@
                         <p class="text-blue-700/70 text-sm mt-1">مثالي للاستثمار السريع أو السكن الفردي الفاخر.</p>
                     </div>
                     <div class="w-24 h-24 rounded-2xl overflow-hidden shadow-inner">
-                        <img src="https://images.unsplash.com/photo-1536376074432-a7ab9e0f3934" class="w-full h-full object-cover group-hover:rotate-3 transition-transform" alt="ستوديو">
+                        <img src="./images/hotel.jpg" class="w-full h-full object-cover group-hover:rotate-3 transition-transform" alt="ستوديو">
                     </div>
                 </div>
                 <div class="group relative overflow-hidden rounded-3xl bg-slate-50 flex items-center p-6 border border-slate-200 hover:shadow-lg transition-all">
@@ -105,6 +122,130 @@
                     </div>
                     <div class="w-24 h-24 rounded-2xl overflow-hidden shadow-inner">
                         <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="w-full h-full object-cover group-hover:rotate-3 transition-transform" alt="دوبلكس">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-right mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">كيف تختار وجهتك القادمة؟</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    الاختيار بين شقة، فيلا، أو وحدة استثمارية مش سهل. جمعنا لك أهم النقاط اللي لازم تفكر فيها بناءً على احتياجك الحالي وميزانيتك، عشان تاخد قرار وأنت مطمن.
+                </p>
+            </div>
+            <div class="space-y-6">
+                <div class="p-8 rounded-2xl bg-slate-50 border-r-4 border-blue-600 hover:bg-blue-50/50 transition-colors">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">1. الغرض من الشراء: سكن أم استثمار؟</h3>
+                    <p class="text-slate-600 leading-loose">
+                    لو هدفك السكن، الأولوية هنا للخدمات المحيطة (مدارس، مستشفيات، قرب من العمل). أما لو هدفك استثماري، فتركيزك لازم يكون على "المناطق الناشئة" اللي لسه سعرها هيعلى، أو الوحدات اللي الطلب عليها في الإيجار عالي جداً زي الاستوديوهات في العاصمة الإدارية أو التجمع.
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border-r-4 border-blue-600 hover:bg-blue-50/50 transition-colors">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">2. إدارة الميزانية وأنظمة التقسيط</h3>
+                    <p class="text-slate-600 leading-loose">
+                    مش دايماً الكاش هو الأفضل. حالياً المطورين بيقدموا تسهيلات بتوصل لـ 10 سنين. النصيحة هنا إنك ما تدفعش كل اللي معاك في المقدم، سيب جزء "سيولة" لأي ظروف أو لمصاريف الفرش والتشطيب، واستفيد من فترات السداد الطويلة خاصة مع معدلات التضخم.
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border-r-4 border-blue-600 hover:bg-blue-50/50 transition-colors">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">3. أهمية المطور العقاري (السمعة أولاً)</h3>
+                    <p class="text-slate-600 leading-loose">
+                    قبل ما تمضي، اسأل عن سوابق أعمال الشركة. هل بيسلموا في الميعاد؟ هل جودة التشطيب زي الصور؟ هل فيه إدارة قوية للكمبوند بعد التسليم؟ شراء عقار هو شراء لـ "سمعة" المطور قبل ما يكون شراء للطوب والأسمنت.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 p-6 bg-blue-50 rounded-2xl border border-blue-100 flex items-center gap-4">
+                <span class="text-2xl"><i class="fa-solid fa-file-pen text-slate-800"></i></span>
+                <p class="text-blue-800 font-medium">
+                    محتاج تحليل مالي لمشروع معين؟ فريقنا جاهز يساعدك بمقارنات دقيقة بين أكتر من 50 مطور عقاري في مصر.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- statics -->
+    <section class="stats my-20 bg-slate-900 rounded-[3rem] p-12 text-white relative overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-64 h-64 bg-blue-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-emerald-600/10 rounded-full blur-3xl"></div>
+        <div class="relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">سوق العقارات في أرقام</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">نظرة سريعة على أداء السوق العقاري المصري خلال العام الحالي، لمساعدتك في اتخاذ قرار مبني على حقائق.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+                <div class="space-y-2">
+                    <div class="number text-5xl font-extrabold text-blue-500 mb-2" data-target="15">0</div>
+                    <div class="text-lg font-semibold">زيادة سنوية</div>
+                    <p class="text-sm text-slate-400">متوسط الزيادة في أسعار الوحدات السكنية خلال 2026.</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="number text-5xl font-extrabold text-blue-500 mb-2" data-target="600">0</div>
+                    <div class="text-lg font-semibold">وحدة جديدة</div>
+                    <p class="text-sm text-slate-400">تم تسليمها في المدن الجديدة (العاصمة، التجمع، زايد).</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="number text-5xl font-extrabold text-blue-500 mb-2" data-target="12">0</div>
+                    <div class="text-lg font-semibold">فترات سداد</div>
+                    <p class="text-sm text-slate-400">أطول فترة تقسيط متاحة حالياً من كبار المطورين.</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="number text-5xl font-extrabold text-blue-500 mb-2" data-target="9">0</div>
+                    <div class="text-lg font-semibold">عائد إيجاري</div>
+                    <p class="text-sm text-slate-400">متوسط العائد السنوي من تأجير الوحدات الإدارية والطبية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- guide section -->
+    <section class="py-16">
+        <div class="mb-12 space-y-2">
+            <h2 class="text-3xl font-bold text-slate-900">دليل الوجهات العقارية 2026</h2>
+            <p class="text-slate-500">مقارنة سريعة لأهم المدن اللي عليها العين الفترة دي في مصر.</p>
+        </div>
+        <div class="space-y-4">
+            <div class="flex flex-col md:flex-row items-center bg-white p-2 rounded-[2rem] border border-slate-100 hover:shadow-xl hover:border-blue-200 transition-all group">
+                <div class="w-full md:w-48 h-32 rounded-[1.5rem] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="العاصمة الإدارية">
+                </div>
+                <div class="flex-grow p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800">العاصمة الإدارية الجديدة</h3>
+                        <p class="text-slate-500 text-sm mt-1">المستقبل الإداري والمالي، وتعتبر الوجهة الأولى للاستثمار طويل الأمد.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="px-4 py-1 bg-blue-50 text-blue-600 text-xs font-bold rounded-full border border-blue-100 italic">فرص استثمارية</span>
+                        <span class="px-4 py-1 bg-slate-50 text-slate-600 text-xs font-bold rounded-full border border-slate-100 italic">بنية تحتية ذكية</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center bg-white p-2 rounded-[2rem] border border-slate-100 hover:shadow-xl hover:border-blue-200 transition-all group">
+                <div class="w-full md:w-48 h-32 rounded-[1.5rem] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="القاهرة الجديدة">
+                </div>
+                <div class="flex-grow p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800">القاهرة الجديدة والتجمع</h3>
+                        <p class="text-slate-500 text-sm mt-1">المنطقة الأكثر حيوية وطلباً للسكن الفاخر والكمبوندات المتكاملة.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="px-4 py-1 bg-emerald-50 text-emerald-600 text-xs font-bold rounded-full border border-emerald-100 italic">الأكثر طلباً للسكن</span>
+                        <span class="px-4 py-1 bg-slate-50 text-slate-600 text-xs font-bold rounded-full border border-slate-100 italic">خدمات متكاملة</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center bg-white p-2 rounded-[2rem] border border-slate-100 hover:shadow-xl hover:border-blue-200 transition-all group">
+                <div class="w-full md:w-48 h-32 rounded-[1.5rem] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="الشيخ زايد">
+                </div>
+                <div class="flex-grow p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800">مدينة الشيخ زايد</h3>
+                        <p class="text-slate-500 text-sm mt-1">تتميز بالهدوء، الرقي، وقربها من أهم المحاور الرئيسية والطرق السريعة.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="px-4 py-1 bg-purple-50 text-purple-600 text-xs font-bold rounded-full border border-purple-100 italic">هدوء ورقي</span>
+                        <span class="px-4 py-1 bg-slate-50 text-slate-600 text-xs font-bold rounded-full border border-slate-100 italic">موقع استراتيجي</span>
                     </div>
                 </div>
             </div>
