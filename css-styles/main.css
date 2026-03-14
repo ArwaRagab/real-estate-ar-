@@ -35,7 +35,7 @@ body {
         max-height: 0;
     }
     .nav-links.active {
-        max-height: 500px;
+        max-height: 600px;
         padding: 20px 0;
     }
     .nav-links li {
@@ -399,7 +399,7 @@ select:invalid {
 }
 /* statistics */
 .stats {
-    background: url("images/three.jpg") center/cover no-repeat;
+    background: url("../images/three.jpg") center/cover no-repeat;
     padding: 100px 20px;
 }
 .stats .overlay {
@@ -534,10 +534,10 @@ select:invalid {
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column; /* كل عمود في سطر */
-        text-align: center;
+        text-align: right;
     }
     .footer-logo, .subscribe-form {
-        justify-content: center;
+        justify-content: start;
     }
     .footer-column {
         min-width: 100%;

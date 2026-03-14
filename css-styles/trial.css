@@ -226,10 +226,10 @@ h2 + p{
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column; /* كل عمود في سطر */
-        text-align: center;
+        text-align: right;
     }
     .footer-logo, .subscribe-form {
-        justify-content: center;
+        justify-content: start;
     }
     .footer-column {
         min-width: 100%;
